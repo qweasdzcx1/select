@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="Font/demo-files/demo.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			.clearfix:after {
+				display: block;
+				content: "";
+				clear: both;
+			}
+			
+			.box {
+				width: 400px;
+				background: #525A5A;
+			}
+			
+			.select {
+				background: #525A5A;
+				width: 350px;
+				margin: auto;
+				padding: 10px 0;
+			}
+			
+			.select>h2 {
+				color: white;
+				height: 35px;
+				line-height: 35px;
+				margin-top: 20px;
+			}
+			
+			.title {
+				color: white;
+				margin-top: 20px;
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			.title>p:first-child {
+				float: left;
+			}
+			
+			.title>p:last-child {
+				float: right;
+			}
+			
+			.price {
+				height: 40px;
+				margin-top: 20px;
+				position: relative;
+			}
+			
+			.price>input {
+				height: 42px;
+				width: 235px;
+				float: left;
+				border: none;
+				padding-left: 15px;
+			}
+			
+			.price>span {
+				float: left;
+				height: 50px;
+				background: white;
+				width: 50px;
+				text-align: center;
+				line-height: 40px;
+			}
+			
+			.date {
+				height: 40px;
+				margin-top: 20px;
+				position: relative;
+			}
+			
+			
+			.date>input {
+				height: 42px;
+				width: 235px;
+				float: left;
+				border: none;
+				padding-left: 15px;
+			}
+			
+			.date>span {
+				float: left;
+				height:50px;
+				background: white;
+				width: 50px;
+				text-align: center;
+				line-height: 40px;
+			}
+			
+			button {
+				float: left;
+				width: 50px;
+				height: 50px;
+				border: none;
+				cursor: pointer;
+				background: white;
+				border-left: 1px solid #cecece;
+			}
+			.date_title{
+				margin-top: 20px;
+				color: white;
+			}
+			.butn{
+				width: 100%;
+				text-align: center;
+				line-height: 42px;
+				height: 42px;
+				color: white;
+				border: none;
+				background: blue;
+				margin-top: 50px;
+				font-size: 20px;
+				cursor: pointer;
+				padding-bottom: 2px;
+			}
+			.select>p{
+				margin-top: 20px;
+				text-align: center;
+				color: lightgray;
+				font-size: 14px;
+				padding-bottom: 100px;
+			}
+			ul{
+				background: white;
+				border:1px solid #cecece;
+				padding: 10px 0;
+				z-index: 10;
+			}
+			ul>li{
+				height: 25px;
+				line-height: 25px;
+				margin-left: 20px;
+			}
+			.qian{
+				position: absolute;
+				top:198px;
+				width: 348px;
+			}
+			.qian2{
+				position: absolute;
+				top:298px;
+				width: 348px;
+			}
+			.up{
+				position: absolute;
+				top: 12px;
+				right: 0px;
+				display: none;
+			}
+			.up2{
+				display: none;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+
+			<div class="select">
+
+				<h2>快速搜索消费贷款</h2>
+				<div class="title clearfix">
+					<p>货款金额</p>
+					<p>不足一万可用小数表示</p>
+				</div>
+				<div class="price clearfix">
+					<input type="text"/>
+					<span class="wan">万元</span>
+					<button class="btn1 icon icon-circle-down down"></button>
+					<button class="btn1 icon icon-circle-up up" ></button>
+					
+				</div>
+					<ul class="qian">
+						<li>
+							<span>5</span>
+							<span>万元</span>
+						</li>
+						<li>
+							<span>10</span>
+							<span>万元</span>
+						</li>
+						<li>
+							<span>15</span>
+							<span>万元</span>
+						</li>
+						<li>
+							<span>20</span>
+							<span>万元</span>
+						</li>
+						<li>
+							<span>25</span>
+							<span>万元</span>
+						</li>
+						<li>
+							<span>30</span>
+							<span>万元</span>
+						</li>
+					</ul>
+
+				<div class="date_title clearfix">
+					<p>货款期限</p>
+				</div>
+				<div class="date clearfix">
+					<input type="text" />
+					<span class="wan2"></span>
+					<button class="btn2 icon icon-circle-down"></button>
+					<button class="btn2 icon icon-circle-up up2"></button>
+				</div>
+				<ul class="qian2">
+						<li>
+							<span>1</span>
+							<span>年</span>
+						</li>
+						<li>
+							<span>10</span>
+							<span>个月</span>
+						</li>
+						<li>
+							<span>5</span>
+							<span>年</span>
+						</li>
+						<li>
+							<span>2</span>
+							<span>个月</span>
+						</li>
+						<li>
+							<span>15</span>
+							<span>个月</span>
+						</li>
+						<li>
+							<span>4</span>
+							<span>年</span>
+						</li>
+					</ul>
+				<div class="butn">搜索一下</div>
+				<p>种信贷产品 家银行 家小贷公司</p>
+			</div>
+		</div>
+
+	</body>
+<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+	$("ul").hide()
+	
+	$(".btn1").click(function(){
+		$(".qian").toggle()
+		$(".up").toggle()
+	})
+	var int1 = $(".price>input").val(5)
+	var wan = $(".wan").html('万元')
+	$(".qian>li").click(function(){
+	$(".qian").hide()
+		
+//		alert(typeof($(this).find("span:first-child").html()))
+		int1.val($(this).find("span:first-child").html())
+		$(".wan").html($(this).find("span:last-child").html())
+//		alert(int1)
+		
+	})    
+	
+	
+	$(".btn2").click(function(){
+		$(".up2").toggle()
+		$(".qian2").toggle()
+	})
+	var int2 = $(".date>input").val(1)
+	var wan = $(".wan2").html('年')
+	$(".qian2>li").click(function(){
+	$(".qian2").hide()
+		
+//		alert(typeof($(this).find("span:first-child").html()))
+		int2.val($(this).find("span:first-child").html())
+		$(".wan2").html($(this).find("span:last-child").html())
+//		alert(int1)
+		
+	})   
+</script>
+
+
+
+
+</html>
